@@ -31,7 +31,8 @@ function AdminTable() {
   }
 
   return (
-    <div>
+    <div>\
+      <title>Admin</title>
       <div>
         <input
           type="text"

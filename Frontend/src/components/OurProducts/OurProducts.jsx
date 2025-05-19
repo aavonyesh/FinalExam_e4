@@ -33,8 +33,8 @@ function OurProducts() {
           <img src={item.image} width={"200px"} />
           <h3>{item.name}</h3>
           <p>${item.price}</p>
-          <div>
-            <Link to={`/detail/${item._id}`}><button >detail</button></Link>
+          <div style={{display:"flex"}}>
+            <li><Link to={`/detail/${item._id}`}><button >detail</button></Link></li>
             <li>{addedBasket(item) ? <button onClick={()=>removeBasket(item._id)}>remove</button> : <button onClick={()=>handleBasket(item)}>add basket</button> }</li>
 
             <li>{checkFav(item) ? <button onClick={()=>removeFav(item._id)}>remove</button> : <button onClick={()=>addFav(item)}>add fav</button>}</li>

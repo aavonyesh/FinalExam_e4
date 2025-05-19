@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 import { BiHealth } from "react-icons/bi";
 import { BasketContext } from "../../context/BasketProvider";
 import { WishlistContext } from "../../context/WishlistProvider";
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa6";
+import { IoLogoTwitter } from "react-icons/io";
 function Navbar() {
   const { basket } = useContext(BasketContext);
   const {favorites} = useContext(WishlistContext)
@@ -31,6 +34,15 @@ function Navbar() {
           </div>
           <div>
             <Link to={"/wishlist"}>Wishlist {favorites.length}</Link>
+          </div>
+          <div>
+            <FaInstagram/>
+          </div>
+          <div>
+            <FaFacebook/>
+          </div>
+          <div>
+            <IoLogoTwitter/>
           </div>
         </div>
       </div>
